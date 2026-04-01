@@ -1,0 +1,417 @@
+<html lang="uz">
+<head>
+    
+    <title>Tarjima kitoblar  | Tarjima kitoblar</title>
+    <style>
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); 
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #F5CC27 ;
+    /* background-color: #27F58B ; }
+
+        /* Navigatsiya menyusi */
+        nav {
+            background-color: #8c0707; /* Haruki Murakami  rangi - to'q qizil */
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px 25px;
+            color:  white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #d9670f; /* Aktsent rang */
+        }
+
+        /* Submenu */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #de532c;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            padding: 0;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            color: #a60b08;
+            padding: 12px 20px;
+            border-bottom: 1px solid #bf6308;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #bf6308;
+            color: #bf6308;
+        }
+
+        /* Asosiy kontent */
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background:  white ;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            color: #bf6308;
+            border-bottom: 2px solid #bf6308;
+            padding-bottom: 10px;
+        }
+
+        .theory-box {
+            background: #eef2f3;
+            padding: 15px;
+            border-left: 5px solid #1a2a6c;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+
+        /* Rasm va Video uslubi */
+        img, video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            display: block;
+            margin: 20px 0;
+        }
+
+        /* Jadval uslubi */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+        }
+
+        table thead tr {
+            background-color: #1a2a6c;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        table th, table td {
+            padding: 12px 15px;
+            border: 1px solid #dddddd;
+        }
+
+        table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        /* Qidiruv bo'limi */
+        .search-section {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            padding: 12px;
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+            box-sizing: border-box;
+   }
+   .search-section input[type="text"] {
+            width: 75%;
+            display: inline-block;
+        }
+        button {
+            padding: 10px 20px;
+            background: #b21f1f;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+  button:hover {
+            background: #e62e2e;
+        }
+
+        .murojaat-blok {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        }
+
+        .yuborish-btn {
+            background-color: #28a745;
+            width: 100%;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    /* Modal */
+        #huquqModal {
+            display:none; 
+            position:fixed; 
+            z-index:2000; 
+            left:0; top:0; 
+            width:100%; height:100%; 
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .modal-content {
+            background-color: white; 
+            margin: 5% auto; 
+            padding: 30px; 
+            border-radius: 8px; 
+            width: 70%; 
+            max-height: 80%; 
+            overflow-y: auto; 
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute; 
+            right: 20px; 
+            top: 10px; 
+            font-size: 28px; 
+            cursor: pointer; 
+            color: #b21f1f;
+        }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#">Bosh sahifa</a></li>
+        <li>
+            <a href="#"> H.Murakami asarlari ▾</a>
+            <ul>
+                <li><a href="https://daryo.uz/2020/01/13/qancha-urinma-ogritganda-ogriydi-xaruki-murakamining-norvegiya-ormoni-romani-haqida/" target="_blank">Norveg O`rmon</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/1Q84">1Q84</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Kafka_on_the_Shore" target="_blank">Sohildagi Kafka </a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Hear_the_Wind_Sing"  target="_blank">Shamol qo‘shig‘ini tingla</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/A_Wild_Sheep_Chase"  target="_blank">Qo`y ovi</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Hard-Boiled_Wonderland_and_the_End_of_the_World"  target="_blank">Tizginsiz sehrli diyor va dunyo yakuni </a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Men_Without_Women_(Murakami)"  target="_blank">Ayollarsiz Erkaklar</a></li>
+
+            </ul>
+        </li>
+        <li><a href="javascript:void(0)" onclick="openModal()">Haruki Murakami haqida</a></li>
+        <li><a href="#murojaat-anchor">Biz bilan bog'lanish</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1>Tarjimonlik va tarjima qiyinchiliklari</h1>
+    <p>Asarlarni  tarjima qilish — bu shunchaki so‘zlarni almashtirish emas, balki bir madaniyatni ikkinchi madaniyatga moslashtirish demakdir.Yaxshi tarjima — bu kitobxon asarni o‘qiyotganda u tarjima ekanligini sezmasligi, go‘yoki asar o‘zbek tilida yozilgandek his qilishi demakdir.</p>
+
+    <div class="theory-box">
+        <h3>Tarjima qiyinchiliklari</h3>
+        <p>O‘zbek tili turkiy tillar oilasiga kiradi. Ingliz yoki rus tillarida esa grammatik qurilish butunlay boshqacha. Uzun va murakkab gaplarni o‘zbek tilida tabiiy yangraydigan qilib qayta shakllantirish katta mahorat talab qiladi.O‘zbek tili turkiy tillar oilasiga kiradi. Ingliz yoki rus tillarida esa grammatik qurilish butunlay boshqacha. Uzun va murakkab gaplarni o‘zbek tilida tabiiy yangraydigan qilib qayta shakllantirish katta mahorat talab qiladi.Ilmiy-ommabop va texnik kitoblarda yangi tushunchalarning o‘zbekcha muqobillari hali shakllanib ulgurmagan bo‘lishi mumkin. Bu holatda tarjimon o‘zbek tilining boy imkoniyatlaridan foydalanib yangi so‘z yasashi yoki xalqaro terminlarni saqlab qolishi kerak bo‘ladi.</p>
+    </div>
+
+    <h2>Mashhur yozuvchi : Haruki Murakami </h2>
+    <a href="https://uz.wikipedia.org/wiki/Haruki_Murakami">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Photo_signed_by_Haruki_Murakami.jpg" alt="Haruki Murakami">
+        </a>
+      <p style="text-align: center;"><a href="https://uz.wikipedia.org/wiki/Haruki_Murakami" target="_blank" style="color:#8c0707; font-weight:bold;">Haruki Murakami hayoti haqida ko'proq bilish uchun ©</a></p>
+
+    <h2>H.Murakami mini-biografiyasi </h2>
+<div style="display: flex; justify-content: center;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lcrZGH28riY" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p style="text-align: center; margin-top: 15px;">Haruki Murakami aslida kim bo'lganligi va qanday hayot kechirganini bu yerda bilib olishingiz mumkin.</p>
+</div>
+ <div class="container"><h2>Asarlarining qancha nusxada sotilishi statistikasi</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Asar nomlari </th>
+                <th>Birinchi marotaba bosib chiqarilgan yili </th>
+                <th>Asar qisqacha syujeti va asosiy qahramonlari </th>
+                <th>Qancha nusxada sotilgani </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Norveg o`rmoni </td>
+                <td>1987</td>
+                <td>Syujet: 1960-yillardagi Tokiodagi talabalik hayoti, yo'qotish va ishqiy munosabatlar haqidagi realistik drama. Qahramonlar: Toru Vatanabe, Naoko, Midori.</td>
+                <td>12.5 milliondan ortiq</td>
+            </tr>
+            <tr>
+                <td>1Q84</td>
+                <td>2009</td>
+                <td>Syujet: Parallel dunyoga tushib qolgan ayol va yozuvchi yigitning sirli qissasi. Qahramonlar: Aomame, Tengo.</td>
+                <td>8.5 milliondan ortiq</td>
+
+            </tr>
+            <tr>
+                <td>Sohildagi Kafka</td>
+                <td>2002</td>
+                <td>Syujet: Uydan qochgan 15 yoshli o'smir va mushuklar bilan gaplasha oladigan g'alati qariyaning taqdirlari sirli ravishda tutashadi. Qahramonlar: Kafka Tamura, Nakata, Hoshino.</td>
+                <td>4.8 milliondan ortiq</td>
+            </tr>
+            <tr>
+      <td>Qo'y ovi</td>
+      <td>1982</td>
+      <td>Sirli yulduzli qo'yni topish topshirig'ini olgan oddiy yigitning syurrealistik sarguzashtlari. Qahramonlar: Nomsiz hikoyachi, "Kalamush".</td>
+      <td>1.8 milliondan ortiq</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+ <div class="container"> 
+      <div class="search-section">
+        <h3>Tadqiqot uchun qidiruv</h3>
+        <form onsubmit="searchSite(); return false;">
+            <input type="text" id="qidiruv" placeholder="Mavzuni kiriting (masalan: Norveg o`rmoni )...">
+            <button type="submit">Qidirish</button>
+        </form>
+        <br>
+        <iframe id="frame" name="frame1" width="100%" height="400" style="border:none; background: white; border-radius: 4px;"></iframe>
+   </div>
+</div>
+<div id="murojaat-anchor" class="murojaat-blok">
+    <h2>Murojaat yuborish </h2>
+    <form action="#">
+        <label>Ismingiz:</label>
+        <input type="text" placeholder="Ismingizni kiriting" required>      
+      
+  <label>Email manzilingiz:</label>
+        <input type="email" placeholder="Emailingizni kiriting" required>
+        
+        <label>Xabar:</label>
+        <textarea rows="5" placeholder="Xabaringizni yozing..." required></textarea>
+        
+        <button type="submit" class="yuborish-btn">Yuborish</button>
+    </form>
+</div>
+
+</div>
+
+<div id="murojaat" class="container" style="text-align: center; background-color: #1a2a6c; color: white;">
+    <h2 style="border-bottom: 2px solid #b21f1f; display: inline-block; padding-bottom: 10px;">Abdig`afforov Kamronbek </h2>
+    <div style="margin-top: 20px;">
+        <p>Murojaat va hamkorlik uchun :</p>
+        
+        <h3 style="margin: 10px 0;">
+            <a href="https://t.me/AbdigafforovKamronbek" target="_blank" style="color: #3827F5; text-decoration: none;">🔵 Telegram: @AbdigafforovKamronbek</a>
+        </h3>
+        
+        <h3 style="margin: 10px 0;">
+            <a href="https://www.youtube.com/@TOP_BOOKSAll" target="_blank" style="color: #F5E727; text-decoration: none;">  You tube:@TOP_BOOKSAll
+</a>
+        </h3>
+        
+        <h3 style="margin: 10px 0;">📞 Tel: +998 (90) 977-37-74</h3>
+        
+        <p style="margin-top: 50px; font-size: 0.8em; opacity: 0.7;">© 2026 Barcha huquqlar himoyalangan.</p>
+    </div>
+</div>
+
+<div id="huquqModal" style="display:none; position:fixed; z-index:2000; left:0; top:0; width:100%; height:100%; background-color: rgba(0,0,0,0.8);">
+    <div style="background-color: white; margin: 5% auto; padding: 20px; border-radius: 8px; width: 70%; max-height: 80%; overflow-y: auto; position: relative; font-family: sans-serif;">
+        <span onclick="closeModal()" style="position: absolute; right: 20px; top: 10px; font-size: 28px; cursor: pointer; color: #b21f1f;">&times;</span>
+        
+        <h2 style="color: #1a2a6c; border-bottom: 2px solid #b21f1f;">Haruki Murakami hayot yo`li</h2>
+        <p>Haruki Murakami — yapon adabiyotining yo`lchi yulduziga aylangan yozuvchi. Uning hayot yo`lini o`rganish har bir yapon adabiyoti ixlosmandi uchun muhimdir:</p>
+        
+        <ol style="line-height: 1.8; color: #333;">
+            <li><strong>Bolalik va talabalik yillari (1949–1970):</strong> 1949-yil 12-yanvar: Yaponiyaning Kyoto shahrida tug‘ilgan. Otasi yapon tili va adabiyoti o‘qituvchisi bo‘lgan.
+
+Yoshlik qiziqishlari: Murakami yoshligidan g‘arb adabiyoti va musiqasiga (jazz) qattiq qiziqqan. Bu uning kelajakdagi uslubiga kuchli ta’sir ko‘rsatdi.
+
+Waseda universiteti: Tokiodagi ushbu nufuzli universitetda drama san’atini o‘rgangan </li>
+            <li><strong>"Piter Ket" va Jazz davri (1971–1978):</strong>Nikoh: 1971-yilda turmush o‘rtog‘i Yoko bilan oila qurgan.
+
+Tadbirkorlik: 1974-yilda Tokioda "Peter Cat" nomli jazz-bar ochadi. Yozuvchi bo‘lishdan oldin u 7 yil davomida ushbu barni boshqargan </li>
+            <li><strong>"Vahiy" va ijodning boshlanishi (1978–1982):</strong> 1978-yil aprel: Beysbol o‘yinini tomosha qilayotganida, kutilmaganda "Men kitob yoza olaman" degan fikr keladi. O‘sha kuni tunda ilk asarini yozishni boshlaydi.
+
+Ilk muvaffaqiyat: 1979-yilda "Shamol qo‘shig‘ini tingla" asari uchun "Gunzo" mukofotini oladi </li>
+            <li><strong>Dunyo miqyosidagi shuhrat (1985–1995):</strong> Trilogiya: "Qo‘y ovi" (1982) asari bilan katta e’tiborga tushdi.
+
+1987-yil: "Norvegiya o‘rmoni" romani nashr etiladi. Bu asar millionlab nusxada sotilib, Murakamini Yaponiyaning eng mashhur yozuvchisiga aylantiradi.
+
+Sayohatlar: U Gretsiya, Italiya va AQShda yashab, ijod qiladi </li>
+            <li><strong>Yetuklik va ijtimoiy mavzular (1995–hozirgacha):</strong>O‘zgarish: 1995-yildagi Kobe zilzilasi va Tokiodagi gaz hujumi Murakamini ko‘proq ijtimoiy va psixologik travmalarni o‘rganishga undadi.
+
+Katta asarlar: "Sohildagi Kafka" (2002), "1Q84" (2009) va "Rangsiz Sukuru Tazaki..." (2013) kabi durdonalar dunyo yuzini ko‘rdi.
+
+Nobel kutishlari: Har yili u Nobel mukofotiga asosiy nomzodlardan biri sifatida e’tirof etiladi.</li>
+            <li><strong>Murakamining o‘ziga xos "formulasi":</strong> Yugurish: U har kuni 10 km masofaga yuguradi va ko‘plab marafonlarda qatnashadi. Bu uning ijodiy intizomining asosi.
+
+Sehrli realizm: Uning asarlarida oddiy hayot va g‘ayritabiiy olamlar  bir-biriga qo‘shilib ketadi.
+
+Musiqa: Har bir asarida klassik yoki jazz musiqasiga ishoralar bor </li>
+                    </ol>
+        
+        <button onclick="closeModal()" style="background: #1a2a6c; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin-top: 20px;">Yopish</button>
+    </div>
+<script>
+
+function searchSite() {
+    var q = document.getElementById("qidiruv").value;
+        document.getElementById("frame").src = "https://www.bing.com/search?q=" + encodeURIComponent(q);
+}
+
+
+function openModal() {
+    document.getElementById("huquqModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("huquqModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+    var modal = document.getElementById("huquqModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
